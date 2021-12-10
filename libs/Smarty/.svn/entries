@@ -1,0 +1,160 @@
+8
+
+dir
+2811
+https://svn.xtvapps.com/svn/fcatrin/trunk/hnv/sisu/libs/Smarty
+https://svn.xtvapps.com/svn/fcatrin
+
+
+
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+fb8f5c45-ab54-496a-8d9e-4c10816ea98d
+
+BUGS
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+fd67d108098e53c492cab364fe23f72b
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+demo
+dir
+
+TODO
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+7e8a66f48ef0e02f7a94d2053110f525
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+INSTALL
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+26e24c1e5ef87a1ec69e67a8caf179a5
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+ChangeLog
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+f96bbad6009fe5d133a88577fbe0d81a
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+FAQ
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+7f0e90240a44f44661a298bd2aa28ee0
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+RELEASE_NOTES
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+d66430545434f43aacd18381533901db
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+libs
+dir
+
+QUICK_START
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+e9e7b05d04e18386adee9794fee1da0d
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+misc
+dir
+
+NEWS
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+bac534ed937d9a33c2792039862d1ea7
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+COPYING.lib
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+68ad62c64cc6c620126241fd429e68fe
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+README
+file
+
+
+
+
+2013-03-02T18:12:53.000000Z
+1a3fe37eed420a020489d1082ea150c8
+2013-02-28T19:27:29.823302Z
+2774
+fcatrin
+
+unit_test
+dir
+

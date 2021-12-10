@@ -1,0 +1,12 @@
+<center>
+{if ($resp == 1)}
+Ud. no puede dar termino a su turno ya que aun
+tiene pacientes bajo su responsabilidad.
+<br>
+<input type="button" onclick='$("#terminar_turno").dialog("close");ver_transfiere_responsabilidad("{$cod_u}",{literal}{modal:true,error: function() { alert("Could not load form") }}{/literal});' value="Transferir Responsabilidad">
+{else}
+¿Esta seguro que quiere dar termino a su turno?
+<br>
+<input type="button" onclick='Terminar_Turno("{$cod_u}");' value="OK">
+{/if}
+</center>

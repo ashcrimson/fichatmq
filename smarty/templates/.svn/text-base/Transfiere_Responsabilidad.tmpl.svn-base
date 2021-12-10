@@ -1,0 +1,88 @@
+<table width="100%">
+<tr>
+<td valign="top">
+<fieldset>
+<legend>Entrega</legend>
+<fieldset>
+<legend>Login</legend>
+<center>Dr(a): {$smarty.session.nombre_u}</center>
+</fieldset>
+
+<table >
+<tr><th>Id Atencion</th><th>Nombre</th></tr>
+{foreach item=fila from=$pac_ref_emite}
+<tr><td><a href="#" onclick="ver_detalle_paciente({$fila.id_atencion});">{$fila.id_atencion}</a></td><td><a href="#" onclick="ver_detalle_paciente({$fila.id_atencion});">{$fila.nombre}</a></td></tr>
+{/foreach}
+</table>
+</fieldset>
+</td>
+<td valign="top">
+<fieldset>
+<legend>Detalle Paciente</legend>
+<div id="div_detalle_paciente" style="background-color:#FFFFFF;color:#000000;"></div>
+</fieldset>
+</td>
+<td valign="top">
+<fieldset>
+<legend>Recibe</legend>
+<fieldset>
+<legend>Login</legend>
+<center>
+{if ($smarty.session.recibe.cod_u == '')}
+<form id="form_login_r" method="post" action="Servicios/login_r.php">
+                <fieldset>
+            	<label >
+                <span>Email</span>
+                <input id="cod_u_r" name="cod_u_r" value="" type="text" >
+                </label>
+<br>
+                
+                <label >
+                <span>Clave</span>
+                <input id="clave_r" name="clave_r" value="" type="password" >
+                </label>
+<br>                
+               <input type="submit" value="Ingresar" /> 
+                
+                
+                </fieldset>
+          </form>
+{else}
+
+Dr(a): {$smarty.session.recibe.nombre_u }
+{/if}
+</center>
+</fieldset>
+
+<table >
+<tr><th>Id Atencion</th><th>Nombre</th></tr>
+{foreach item=fila from=$pac_ref_recibe}
+<tr><td>{$fila.id_atencion}</td><td>{$fila.nombre}</td></tr>
+{/foreach}
+</table>
+{if ($smarty.session.recibe.cod_u != '')}
+<center><input type="button" onclick="Recibe_Paciente('{$smarty.session.cod_u}','{$smarty.session.recibe.cod_u}');" value="Recibo Conforme"></center>
+{/if}
+</fieldset>
+</td>
+</tr>
+</table>
+
+{literal}
+<script>
+var optionslogin_r = { 
+                success:       showResponseLoginR
+            };   
+            function showResponseLoginR(responseText, statusText, xhr, $form)  { 
+                resp = JSON.parse(responseText);
+                if (resp.estado==1){
+                  $('#transfiere_resp').load('Vistas/Transfiere_Responsabilidad.php?cod_u={/literal}{$smarty.session.cod_u}{literal}');
+                }  
+                else{ 
+                  alert("Usuario o Password Invalida");
+                } 
+            }         
+            $('#form_login_r').ajaxForm(optionslogin_r);
+
+</script>
+{/literal}

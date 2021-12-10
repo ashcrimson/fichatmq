@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Vista asignación de Boxes</title>
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery-ui/css/ui-lightness/jquery-ui-1.10.0.custom.min.css" />
+       
+	<script src="jquery/js/tablero.js"></script>
+        
+	<link rel="stylesheet" href="style.css" />
+{literal}
+<style type="text/css">
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 75%;
+}
+</style>
+<style>
+.ui-tooltip, .arrow:after {
+background: #F3E2A9;
+border: 2px solid white;
+}
+.ui-tooltip {
+padding: 10px 20px;
+color: #000000;
+border-radius: 20px;
+font: bold 14px "Helvetica Neue", Sans-Serif;
+text-transform: uppercase;
+box-shadow: 0 0 7px black;
+}
+.arrow {
+width: 70px;
+height: 16px;
+overflow: hidden;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+bottom: -16px;
+}
+.arrow.top {
+top: -16px;
+bottom: auto;
+}
+.arrow.left {
+left: 20%;
+}
+.arrow:after {
+content: "";
+position: absolute;
+left: 20px;
+top: -20px;
+width: 25px;
+height: 25px;
+box-shadow: 6px 5px 9px -9px black;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+tranform: rotate(45deg);
+}
+.arrow.top:after {
+bottom: -20px;
+top: auto;
+}
+</style>
+{/literal}
+</head>
+<body >
+<div id="listado_resp"></div>
+	<h1>Resumen</h1>
+<center><table width="20%"><tr><td id="cant_e"> 0 </td><td> EN ESPERA </td><td id="cant_t"> 0 </td><td> TRIAGE </td><td id="cant_a"> 0 </td><td> ATENCION </td></tr></table></center>
+	<h1>Pacientes Admitidos</h1>
+	<div id="panelPacientes" style="height:80px;overflow:auto;">
+		<div class="tableHeader">
+                        <div class="colheader c1">ID<br>Atencion</div>
+			<div class="colheader c2">Nombre Paciente</div>
+			<div class="colheader c3">Acompañante Paciente</div>
+
+			<div class="colheader c4">Tiempo en<br> Urgencia</div>
+			<div class="colheader c5">Triage</div>
+			<div class="colheader c6">Motivo</div>
+			<div class="colheader c7">Ubicación</div>
+			<div class="colheader c8">Estado</div>
+			<br clear="all" />
+
+		</div>
+		<div id="tblPacientes"></div>
+		<br clear="all" />
+	</div>
+	<div id="panelBoxes">
+         
+	<h1>Personal de Turno</h1>
+	<center>
+        <div id="personal">
+
+			<div id="panelMedicos">
+                                <center><b>Medicos</b></center>   
+				<div id="tblMedicos"></div>
+			</div>
+                        <div id="panelEnfermeras">
+                                <center><b>Enfermeras</b></center>   
+				<div id="tblEnfermeras"></div>
+			</div>
+                        <div id="panelAuxiliares">
+                                <center><b>Auxiliares de Enfermeria</b></center>   
+				<div id="tblAuxiliares"></div>
+			</div> 
+
+		</div>
+	</center>
+		<br clear="all" />
+<h1>Box y Camillas</h1>
+                <table  width="100%">
+                 
+                  {foreach item=seccion key=cod_sec from=$rf}
+                  <tr> 
+                    <td><center><b><u>{$seccion.descr}</u></b></center></td><td valign="top" id="seccion{$cod_sec}"></td>
+                  </tr> 
+                  {/foreach}
+                 
+                 
+                
+                </table> 
+	</div>
+
+</body>
+</html>

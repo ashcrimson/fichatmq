@@ -1,0 +1,113 @@
+@media print {
+    .no-print
+    {
+
+        display: none !important;
+        height: 0;
+    }
+    
+fieldset{
+border:1px solid black;
+width: 98%;
+font-size:10pt;
+  font-family:Arial;
+font-weight:normal;
+overflow:visible;
+}
+div{
+	height: 100%;
+    width: 97%;
+	/*border:1px solid black;*/
+font-size:10pt;
+font-family:Arial;
+font-weight:normal;
+
+  white-space: pre;
+
+
+}
+span{
+	
+font-size:10pt;
+font-family:Arial;
+font-weight:normal;
+
+  white-space: pre;
+
+}
+pre{
+
+font-size:10pt;
+font-family:Arial;
+font-weight:normal;
+ white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -pre-wrap; /* Opera */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    
+}
+p{
+	height: 100%;
+    width: 97%;
+  white-space: pre;
+font-size:10pt;
+font-family:Arial;
+font-weight:normal;
+
+
+} 
+
+      * {
+font-size:10pt;
+font-family:Arial;
+font-weight:normal;
+  
+}
+#lbl {
+font-size:12pt;
+font-family:Arial;
+font-weight:bolder;
+  
+}
+      th {
+font-size:10pt;
+font-family:Arial;
+font-weight:normal;
+  
+}
+      td {
+font-size:10pt;
+font-family:Arial;
+font-weight:normal; 
+}
+
+     body {
+font-size:10pt;
+font-family:Arial;
+font-weight:normal;
+
+  white-space: pre;
+overflow-wrap: break-word;
+ font-size-adjust:none;
+/*  
+
+page-break-before: avoid;
+ 
+    width:80%;
+    height:90%;
+ 
+    zoom: 300%;
+*/   
+margin-left: 5px; 
+     margin-right: 5px;
+
+/*height: 842px;
+        width: 595px;	
+     margin-top: 1mm; 
+     margin-bottom: 1mm; 
+     margin-left: 1mm; 
+     margin-right: 1mm
+     */
+}
+     
+}

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/templates
+END
+parse_obj_meth.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/templates/parse_obj_meth.tpl
+END
+parse_math.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/templates/parse_math.tpl
+END
+index.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/templates/index.tpl
+END
+constant.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/templates/constant.tpl
+END
+assign_var.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/templates/assign_var.tpl
+END

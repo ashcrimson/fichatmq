@@ -1,0 +1,39 @@
+	$(document).ready(function() {
+            var optionslogin = { 
+                success:       showResponseLogin
+            };   
+            function showResponseLogin(responseText, statusText, xhr, $form)  { 
+                resp = JSON.parse(responseText);
+                if (resp.estado==1){
+                  window.location="index.php";
+                }  
+                else{ 
+                  alert("Usuario o Password Invalida");
+                } 
+            }         
+            $('#form_login').ajaxForm(optionslogin);
+	    var loginDialog = $("#form_login");
+	    $(loginDialog).dialog({
+	        title: 'Acceso al Sistema de Información - Servicio Urgencias Hospital Naval Almirante NEF',
+	        autoOpen: true,    
+                dialogbeforeclose: false,  
+	        closeOnEscape: false,
+	        draggable: false,
+	        width: 460,
+	        minHeight: 50,
+	        modal: true,
+	        resizable: false,
+	        open: function(event, ui) {
+	            // scrollbar fix for IE
+	            $('body').css('overflow','hidden');
+                    $(".ui-dialog-titlebar-close").hide(); 
+	        },
+	        close: function() {
+	            // reset overflow
+	            $('body').css('overflow','auto');
+	        }
+	    }); // end of dialog
+	});
+
+      
+            

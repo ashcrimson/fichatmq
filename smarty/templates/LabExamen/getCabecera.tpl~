@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    
+    <title>Consulta de Examenes -  Hospital Naval Almirante NEF</title>
+    
+    <!--======= Basic Metas =======-->
+	<meta charset="utf-8">
+	
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!--======= Mobile Metas =======-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+	<!--======= Favicons =======-->
+    
+    <!-- website favicon -->
+    <link rel="shortcut icon" href="_img/favicon.png">
+    <!-- iPhone, iPod Touch -->
+    <link rel="apple-touch-icon" href="_img/apple-touch-icon.png">
+    <!-- iPhone with Retina display -->
+    <link rel="apple-touch-icon" sizes="114x114" href="_img/apple-touch-icon-114x114.png">
+    <!-- iPad first and second generation -->
+    <link rel="apple-touch-icon" sizes="72x72" href="_img/apple-touch-icon-72x72.png">
+    <!-- iPad with Retina display -->
+    <link rel="apple-touch-icon" sizes="144x144" href="_img/apple-touch-icon-144x144.png">    
+    
+    <!--======= CSS =======-->
+    
+    <!-- CSS Hórus Framework -->
+	<link rel="stylesheet" type="text/css" href="_css/horus.css">
+    <!-- Your Style -->
+	<link rel="stylesheet" type="text/css" href="_css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<header class="col16 row"> <!-- header site -->
+                    <center>		
+<h1 style="margin-top:20px"> <img src="tcpdf/images/escudo.png" width="50" height="70"> Resultado Consulta de Ex&aacute;menes Hospital Naval Almirante NEF</h1></center>
+            <hr class="cleanline">
+		</header>
+        
+        <section class="row" id="formstyle">
+
+             <div class="col1_3">
+                         
+

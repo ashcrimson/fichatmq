@@ -1,0 +1,11 @@
+{foreach item=fila from=$datos_pac }
+<center>
+<h2>Atencion Nro :<span id="det_pac_id_aten">{$fila.id_atencion}</span></h2>
+<table>
+<tr><td>Nombre</td><td>{$fila.nombre}</td></tr>
+<tr><td>Fecha de Nacimiento</td><td>{$fila.fec_nac}</td></tr>
+<tr><td>Sexo</td><td>{$fila.ind_sexo}</td></tr>
+</table>
+</center>
+
+{/foreach}

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/configs
+END
+globals_double_quotes.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/configs/globals_double_quotes.conf
+END
+globals_single_quotes.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/fcatrin/!svn/ver/2774/trunk/hnv/sisu/libs/Smarty/unit_test/configs/globals_single_quotes.conf
+END

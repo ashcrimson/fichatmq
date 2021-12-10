@@ -1,0 +1,15 @@
+<center>
+{if ($pac_ref|@count >0)}
+{if ($cod_u==$smarty.session.cod_u)}
+<input type="button" onclick='$("#listado_resp").dialog("close");ver_transfiere_responsabilidad("{$cod_u}",{literal}{modal:true,error: function() { alert("Could not load form") }}{/literal});' value="Transferir Responsabilidad">
+{/if}
+<table>
+<tr><th>Id Atencion</th><th>Nombre</th></tr>
+{foreach item=fila from=$pac_ref}
+<tr><td>{$fila.id_atencion}</td><td>{$fila.nombre}</td></tr>
+{/foreach}
+</table>
+{else}
+<b>No hay pacientes bajo responsabilidad de este Medico</b>
+{/if}
+</center>
